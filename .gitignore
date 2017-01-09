@@ -4,3 +4,5 @@
 
 /skillboardAPI/bin/Debug/netcoreapp1.0
 /skillboardAPI/obj/Debug/netcoreapp1.0
+/skillboardAPITests/bin/Debug/netcoreapp1.0
+/skillboardAPITests/obj/Debug
