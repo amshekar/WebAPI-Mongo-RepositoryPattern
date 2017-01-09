@@ -4,8 +4,7 @@ Web API with the mongodb
 
 Step 1:
 
-Clone the Code from https://github.com/amshekar/skillboard-api-mongodb.git
-
+Clone the Code from https://github.com/amshekar/WebAPI-Mongo-RepositoryPattern.git
 step 2 Change the Connection string of the MongoDB in the appsettings.json like "MongoConnection": {
 "ConnectionString": "mongodb://localhost:27017", "Database": "skillvo-test" },
 
