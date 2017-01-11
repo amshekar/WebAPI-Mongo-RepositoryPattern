@@ -27,12 +27,12 @@ namespace skillboardAPI.BusinessLayer
 
         public async Task AddImage(ImageGallery item)
         {
-            await _imageRepository.AddImage(item);
+            await _imageRepository.Insert(item);
         }
 
         public async Task<IEnumerable<ImageGallery>> GetAllImages()
         {
-          return  await _imageRepository.GetAllImages();
+          return  await _imageRepository.GetAll();
         }
 
         public Task<ImageGallery> GetImage(string id)

@@ -28,8 +28,8 @@ namespace skillboardAPI.Controllers
 
                 try
                 {
-                    _imageGalleryRepository.RemoveAllImages();
-                    _imageGalleryRepository.AddImage(new ImageGallery()
+                    _imageGalleryRepository.RemoveAll();
+                    _imageGalleryRepository.Insert(new ImageGallery()
                     {
                         Id = "1",
                         Description = "If you're a service business, freelancer or entrepreneur, the Skillvo Digital Marketing Platform is designed for you to showcase your work and connect you with clients seeking your skills and services.",
@@ -40,7 +40,7 @@ namespace skillboardAPI.Controllers
                         UpdatedOn = DateTime.Now,
                         UserId = "1"
                     });
-                    _imageGalleryRepository.AddImage(new ImageGallery()
+                    _imageGalleryRepository.Insert(new ImageGallery()
                     {
                         Id = "2",
                         Description = "If you're a service business, freelancer or entrepreneur, the Skillvo Digital Marketing Platform is designed for you to showcase your work and connect you with clients seeking your skills and services.",
@@ -51,7 +51,7 @@ namespace skillboardAPI.Controllers
                         UpdatedOn = DateTime.Now,
                         UserId = "1"
                     });
-                    _imageGalleryRepository.AddImage(new ImageGallery()
+                    _imageGalleryRepository.Insert(new ImageGallery()
                     {
                         Id = "3",
                         Description = "If you're a service business, freelancer or entrepreneur, the Skillvo Digital Marketing Platform is designed for you to showcase your work and connect you with clients seeking your skills and services.",
@@ -63,7 +63,7 @@ namespace skillboardAPI.Controllers
                         UserId = "1"
                     });
 
-                    _imageGalleryRepository.AddImage(new ImageGallery()
+                    _imageGalleryRepository.Insert(new ImageGallery()
                     {
                         Id = "4",
                         Description = "If you're a service business, freelancer or entrepreneur, the Skillvo Digital Marketing Platform is designed for you to showcase your work and connect you with clients seeking your skills and services.",

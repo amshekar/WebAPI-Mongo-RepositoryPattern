@@ -22,6 +22,17 @@ namespace skillboardAPI.Data
             }
 
         }
+
+
+        public virtual IMongoCollection<T> Collection
+        {
+            get
+            {
+
+                return _database.GetCollection<T>(typeof(T).Name);
+            }
+        }
+
         public IMongoCollection<ImageGallery> ImageGallery
 
 
@@ -29,14 +40,6 @@ namespace skillboardAPI.Data
             get
             {
                 return _database.GetCollection<ImageGallery>("ImageGallery");
-            }
-        }
-
-        public virtual IMongoCollection<T> Collection
-        {
-            get
-            {
-                return _database.GetCollection<T>(typeof(T).Name);
             }
         }
     }

@@ -59,12 +59,13 @@ namespace skillboardAPI
             });
 
 
-            //services.AddScoped(typeof(IRepository<>),typeof(Repository<>));  
-            //services.AddTransient<IRepository<ImageGallery>, Repository<ImageGallery>>();         
+            //services.AddScoped(typeof(IRepository<>),typeof(Repository<>)); 
+             
+            //services.AddTransient<IRepository<ImageGallery>, Repository<ImageGallery>>();
             services.AddTransient<IBusinessLayer, BusinessLayers>();
             services.AddTransient<IImageGalleryRepository, ImageGalleryRepository>();
-           // services.AddTransient<IBusinessLayer, BusinessLayers>();
-           // services.AddTransient<IRepository, Data.Repository>();
+            // services.AddTransient<IBusinessLayer, BusinessLayers>();
+            // services.AddTransient<IRepository, Data.Repository>();
             // Inject an implementation of ISwaggerProvider with defaulted settings applied
             services.AddSwaggerGen();
         }
