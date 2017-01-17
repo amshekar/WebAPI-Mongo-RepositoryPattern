@@ -7,7 +7,7 @@ Step 1:
 Clone the Code from https://github.com/amshekar/WebAPI-Mongo-RepositoryPattern.git
 
 step 2 Change the Connection string of the MongoDB in the appsettings.json like "MongoConnection": {
-"ConnectionString": "mongodb://localhost:27017", "Database": "skillvo-test" },
+"ConnectionString": "mongodb://localhost:27017", "Database": "test" },
 
 step 3: Restore/Build the solution in Visualstudio
 
